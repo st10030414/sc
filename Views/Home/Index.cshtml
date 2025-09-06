@@ -1,8 +1,230 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HEY JOSH LOOK</title>
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #121821;
+      --ink: #e8f0ff;
+      --muted: #a9b5c7;
+      --accent: #6fe3ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--ink);
+      background: radial-gradient(1000px 600px at 20% -10%, #152032 0%, var(--bg) 60%), radial-gradient(800px 500px at 120% 0%, #1a2440 0%, transparent 60%), var(--bg);
+    }
+    header {
+      padding: 4rem 1rem 2rem;
+      text-align: center;
+    }
+    h1 { font-size: clamp(2rem, 4vw, 3rem); margin: 0 0 .5rem; }
+    p.lede { color: var(--muted); margin: 0 auto; max-width: 60ch; }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    .wrap { max-width: 1000px; margin: 0 auto; padding: 1rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 1rem;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+      display: flex; flex-direction: column; gap: .5rem;
+    }
+    .card h2 { font-size: 1.1rem; margin: 0; color: var(--accent); letter-spacing: .3px; }
+    .quote { font-size: 1.05rem; }
+    .explain { color: var(--muted); font-size: .95rem; }
+
+    figure { margin: .5rem 0 0; border-radius: 14px; overflow: hidden; border: 1px solid rgba(255,255,255,.08); }
+    figure img { display: block; width: 100%; height: 180px; object-fit: cover; background: #0f1420; }
+    figure figcaption { font-size: .85rem; color: var(--muted); padding: .5rem .75rem; background: rgba(255,255,255,.02); }
+
+    .banner {
+      margin: 2rem 0 1rem; padding: 1rem; border-radius: 16px; border: 1px dashed rgba(255,255,255,.18);
+      display: grid; grid-template-columns: 1fr; gap: .5rem; align-items: center;
+    }
+    .banner strong { color: var(--accent); }
+    .footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 2rem 1rem 3rem; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .9em; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>JOSH LOOK WHAT I DID</h1>
+    <p class="lede">A serious academic exploration of how to speak to the youths</p>
+  </header>
+
+  <main class="wrap">
+    
+
+    <section class="grid">
+      <article class="card">
+        <h2>“No cap… I brought my hat just in case.”</h2>
+        <p class="quote">I announce my honesty by holding up a baseball cap, which I then place on my head. Irony achieved.</p>
+        <p class="explain">Misusing <em>no cap</em> as a literal headwear policy.</p>
+        <figure>
+          <!-- Put a random image URL below -->
+          <img src="https://in.pinterest.com/pin/661747739012409808/" />
+          <figcaption>Exhibit A: Totally essential visual aid.</figcaption>
+        </figure>
+      </article>
+
+      <article class="card">
+        <h2>“My soup has incredible rizz.”</h2>
+        <p class="quote">The tomato bisque flirted with me. I will be suing.</p>
+        <p class="explain">Using <em>rizz</em> (charisma) for culinary vibes.</p>
+        <figure>
+          <img src="" alt="Randomly unrelated picture #2" />
+          <figcaption>Is this soup? Absolutely not.</figcaption>
+        </figure>
+      </article>
+
+      <article class="card">
+        <h2>“Bet. (Then does not, in fact, bet.)”</h2>
+        <p class="quote">I say “bet” to confirm plans, then immediately open a savings account instead.</p>
+        <p class="explain">Treating <em>bet</em> as financial advice.</p>
+        <figure>
+          <img src="" alt="Randomly unrelated picture #3" />
+          <figcaption>Financial drama stock photo. Or a llama. Dealer’s choice.</figcaption>
+        </figure>
+      </article>
+
+      <article class="card">
+        <h2>“This cardigan has immaculate drip.”</h2>
+        <p class="quote">I spill water on myself to activate the drip technology.</p>
+        <p class="explain">Interpreting <em>drip</em> as moisture rather than style.</p>
+        <figure>
+          <img src="" alt="Randomly unrelated picture #4" />
+          <figcaption>Hydration is fashion now.</figcaption>
+        </figure>
+      </article>
+
+      <article class="card">
+        <h2>“That homework slaps me back.”</h2>
+        <p class="quote">Every time I open the textbook, it swings first.</p>
+        <p class="explain">Confusing <em>slaps</em> (is great) with physical assault.</p>
+        <figure>
+          <img src="" alt="Randomly unrelated picture #5" />
+          <figcaption>POV: A worksheet with hands.</figcaption>
+        </figure>
+      </article>
+
+      <article class="card">
+        <h2>“This lasagna is so mid-tier boss.”</h2>
+        <p class="quote">Not the final course, but you must defeat it to reach dessert.</p>
+        <p class="explain">Upgrading <em>mid</em> into a video game boss ranking.</p>
+        <figure>
+          <img src="" alt="Randomly unrelated picture #6" />
+          <figcaption>Behold: Lasagna with cutscene energy.</figcaption>
+        </figure>
+      </article>
+
+      <article class="card">
+        <h2>“That’s low-key high-key subtle.”</h2>
+        <p class="quote">It is loudly quiet. Thunderously whispering. A stealth trumpet.</p>
+        <p class="explain">Stacking contradictory keys like a DJ with questions.</p>
+        <figure>
+          <img src="" alt="Randomly unrelated picture #7" />
+          <figcaption>Subtlety, illustrated by a neon sign.</figcaption>
+        </figure>
+      </article>
+
+      <article class="card">
+        <h2>“Just yeet it gently.”</h2>
+        <p class="quote">I place the object down with extreme force… very softly.</p>
+        <p class="explain">Turning <em>yeet</em> (throw) into a tender cuddle toss.</p>
+        <figure>
+          <img src="" alt="Randomly unrelated picture #8" />
+          <figcaption>Softball, but literal.</figcaption>
+        </figure>
+      </article>
+
+      <article class="card">
+        <h2>“Not gonna lie… I am, in fact, lying.”</h2>
+        <p class="quote">NGL: full GL. Honesty DLC sold separately.</p>
+        <p class="explain">Declaring transparency as a prelude to chaos.</p>
+        <figure>
+          <img src="" alt="Randomly unrelated picture #9" />
+          <figcaption>The truth (artist’s interpretation).</figcaption>
+        </figure>
+      </article>
+
+      <article class="card">
+        <h2>“This vibe is very NPC-coded.”</h2>
+        <p class="quote">I stand still and repeat one sentence until someone presses A.</p>
+        <p class="explain">Applying game logic to social settings like a champ.</p>
+        <figure>
+          <img src="" alt="Randomly unrelated picture #10" />
+          <figcaption>Side quest unlocked: Find better slang.</figcaption>
+        </figure>
+      </article>
+
+      <article class="card">
+        <h2>“It’s giving… receipts.”</h2>
+        <p class="quote">The outfit hands me itemized proof of purchase.</p>
+        <p class="explain">Confusing <em>it’s giving</em> with retail operations.</p>
+        <figure>
+          <img src="" alt="Randomly unrelated picture #11" />
+          <figcaption>Fashion, but fiscally responsible.</figcaption>
+        </figure>
+      </article>
+
+      <article class="card">
+        <h2>“I’m so based… on a true story.”</h2>
+        <p class="quote">Critics call it historically inaccurate and kind of a vibe.</p>
+        <p class="explain">Turning <em>based</em> into movie marketing.</p>
+        <figure>
+          <img src="" alt="Randomly unrelated picture #12" />
+          <figcaption>Documentary energy (not a documentary).</figcaption>
+        </figure>
+      </article>
+
+      <article class="card">
+        <h2>“Touching grass for XP.”</h2>
+        <p class="quote">I go outside to level up my photosynthesis skill tree.</p>
+        <p class="explain">Gamifying nature like an indoor druid.</p>
+        <figure>
+          <img src="" alt="Randomly unrelated picture #13" />
+          <figcaption>+10 sunlight, -3 social battery.</figcaption>
+        </figure>
+      </article>
+
+      <article class="card">
+        <h2>“Sheeeesh… is the password.”</h2>
+        <p class="quote">Say it at the door for entry to the library. Quietly. Very quietly.</p>
+        <p class="explain">Deploying hype ad-libs in noise-sensitive zones.</p>
+        <figure>
+          <img src="" alt="Randomly unrelated picture #14" />
+          <figcaption>Librarian: not amused, yet impressed.</figcaption>
+        </figure>
+      </article>
+
+      <article class="card">
+        <h2>“This Wi‑Fi is sus-piciously loyal.”</h2>
+        <p class="quote">I accuse the router of being faithful. It connects anyway.</p>
+        <p class="explain">Weaponizing <em>sus</em> for compliments.</p>
+        <figure>
+          <img src="" alt="Randomly unrelated picture #15" />
+          <figcaption>Imposter? Nah, impostor syndrome.</figcaption>
+        </figure>
+      </article>
+
+    </section>
+
+    <section class="banner" aria-label="Add your own">
+      <p><strong>Add your own!</strong> Copy a card, change the text, and drop a new image URL. Chaos requires maintenance.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Built with 100% organic HTML &amp; CSS. No frameworks were harmed.<br/>
+    <small>Tip: you can drag cards around in your editor to randomize the order. Or don’t. I’m not your vibe coach.</small>
+  </footer>
+</body>
+</html>
